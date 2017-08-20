@@ -56,9 +56,17 @@ img {
 	background: url(images/templatemo_button_01.jpg) no-repeat;
 }
 
+.header_00 {
+	padding: 20px 0 0 0;
+	font-size: 20px;
+	font-weight: bold;
+	color: white;
+	background:url(images/templatemo_horizontal_divider.jpg) bottom repeat-x;
+}
+
 .header_01 {
 	padding: 0 0 15px 0;
-	margin: 0 0 15px 0;
+	margin: 5px 0 15px 0;
 	font-size: 18px;
 	font-weight: bold;
 	color: #0279ff;

@@ -1,63 +1,46 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
+
+  <title>Fanzhong's portfolio</title>
+
+  <!-- meta data and style file -->
+
   <meta name="generator" content="HTML Tidy for HTML5 (experimental) for Windows https://github.com/w3c/tidy-html5/tree/c63cc39" />
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-
-  <title>Project Files</title>
   <meta name="keywords" content="Fanzhong Kong, Project Files" />
+
   <link href="css/featuredcontentglider.css" rel="stylesheet" type="text/css" />
   <link href="css/bootstrap.css" rel="stylesheet" />
   <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
   <link href="css/templatemo_style.css" rel="stylesheet" type="text/css" />
-  <script type="text/javascript" src="js/jquery-1.2.2.pack.js">
-</script>
-  <script type="text/javascript" src="js/featuredcontentglider.js">
-</script>
-  <script type="text/javascript" src="js/jquery.min.js">
-</script>
-  <style>
-  .Tag{
-    color: white;
-    font-weight: bold;
-  }
+  <link href="css/projectPage.css" rel="stylesheet" type="text/css" />
 
-  .topP{
-    background-color: black;
-    font-weight: bold;
-  }
-  .myHeader{
-    color: white;
-    font-size: 35px;
-    padding-left: 100px;
-    padding-top: 30px;
-  }
-  .mask {       
-    position: fixed;
-    background-color: #777;     
-    z-index: 1002;
-    -moz-opacity:0.5;
-    display: none
-  }  
-  </style>
+  <!-- script -->
+  <script type="text/javascript" src="js/jquery-1.2.2.pack.js"></script>
+  <script type="text/javascript" src="js/featuredcontentglider.js"></script>
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/mask.js"></script>
+  
 </head>
 
 <body>
   <div id="mask1" class="mask">
-    <span style="font-size: 16px;" onclick="Hidden(&#39;mask1&#39;, &#39;Video1&#39;)">Close</span>
-
+    
+    <span style="font-size: 16px;" onclick="maskHidden('mask1', 'Video1')">Close</span>
     <center>
       <video id="Video1" controls="controls" width="920" height="690">
-      <source src="1.mp4" type="video/mp4" /></video>
+      <source src="video/Animal_World.mp4" type="video/mp4" /></video>
     </center>
+
   </div>
 
   <div id="mask2" class="mask">
-    <span style="font-size: 16px;" onclick="Hidden(&#39;mask2&#39;, &#39;Video2&#39;)">Close</span>
-
+    
+    <span style="font-size: 16px;" onclick="maskHidden('mask2', 'Video2')">Close</span>
     <center>
       <video id="Video2" controls="controls" width="920" height="690">
-      <source src="2.mp4" type="video/mp4" /></video>
+      <source src="video/Samsara.mov" type="video/mp4" /></video>
     </center>
   </div>
 
@@ -88,7 +71,7 @@
 
       <th>
         <div class="myHeader">
-          Project/ls -l
+          KFZ_Portfolio/ls -l (Projects in resume are not listed here)
         </div>
       </th>
     </tr>
@@ -96,21 +79,31 @@
 
   <div id="templatemo_container">
     <div id="templatemo_content">
+      
       <div id="canadaprovinces" class="glidecontentwrapper">
+      <!-- Course Project -->
+
+        <div class="header_00"> Cource Project </div>
+        <hr>
         <div class="glidecontent">
           <!-- page 1 ( Home ) -->
 
           <div class="header_01">
-            Online Album
+            Simple search engine
           </div>
 
-          <div class="image_wrapper image_wrapper_fl"><img src="images/templatemo_image_01.jpg" alt="image" /></div>
+          <div class="image_wrapper image_wrapper_fl"><img src="images/search_engine.png" alt = "image" width = "250px" height = "120px" /></div>
 
-          <p class="em_text"> Language used: Python (with flask), HTML, CSS, mySQL</p>
+          <p class="em_text"> Language used: Python (with flask), HTML, CSS, mySQL, Hadoop</p>
 
-          <p> See code in github! <a href="https://github.com/kongfanzhong/Online-Album" target="_blank"> link </a></p>
-
-          <p> Description will be added tonight</p>
+          <p> Welcome to see code in github! <a href="https://github.com/kongfanzhong/Online-Album" target="_blank"> link to github code! </a></p>
+          <p> An interesting course project, aiming to build a dynamic website server based on MVC model</p>
+          
+          <ul>
+          <li> Worked with a group of 3 to collaborate on developping and debug tens of files in two weeks </li>
+          <li> Used distributed computing (MapReduce) to speed up </li>
+          <li> Earned full points for all projects in EECS485(web. system) </li>
+          </ul>
 
           <div class="margin_bottom_40"></div>
 
@@ -118,28 +111,27 @@
           Wheel of Fortune
           </div>
 
-          <div class="image_wrapper image_wrapper_fr"><img src=
-          "images/templatemo_image_02.jpg" alt="image" /></div>
+          <div class="image_wrapper image_wrapper_fr">
+          <a href="download/wheelOfFortune.zip"> 
+            <img src= "images/wheelOfFortune.png" alt="image" width="220px" height = "170px" />
+          </a>
+          </div>
 
           <p class="em_text">Language used: Java </p>
 
           <p> See code in github! <a href="https://github.com/kongfanzhong/WheelOfFortune/tree/master/src/eecs285/proj3/kongfz" target="_blank"> link 
-          </a> Description will be added tonight </p>
-          <div class="margin_bottom_40"></div>
+          </a> </p>
+          <p> A simple Java GUI project, simulating the game "wheel of fortune". You can click on the image to <b>download this little fun game!</b> </p>
 
-          <div class="header_01">
-            SignCalendar
-          </div>
+          <ul>
+          <li> Worked individually to design the reasonable OOP for the specfic function</li>
+          <li> Used the appropriate data structure to speed up and make the program code concise </li>
+          <li> Earned almost full points in all projects in EECS285 (java programming course)</li>
+          </ul>
 
-          <div class="image_wrapper image_wrapper_fl"><a href="app.apk"><img src="images/cal.png" width="200px" height="100px" alt="image" /></a></div>
-
-          <p class="em_text"> Language used: Java (SQLlite)</p>
-
-          <p>See code in github! <a href="https://github.com/kongfanzhong/SignCalendar" target="_blank"> link </a></p>
-
-          <p>A simple calendar. Click on photo to download apk.</p>
 
           <div class="margin_bottom_40"></div>
+      <!--  ____________________________________________________________________________________   -->
 
           <div class="header_01">
             Some C++ programs
@@ -153,13 +145,65 @@
           <p> This <a href="https://github.com/kongfanzhong/CPlusPlus_relatives" target="_blank"> link </a> contains some programs writen by C++.
           They are about calculate LCA, MST and solving basic problem. Those programs are intended for you to learn about the code style and ability.
           </p>
-            
+
+
           <div class="margin_bottom_40"></div>
+          <div class="header_00"> Off Cource Project </div>
+          <hr>
+
+            
+          <div class="header_01">
+            SignCalendar
+          </div>
+
+          <div class="image_wrapper image_wrapper_fl"> 
+          <a href="download/app.apk">
+            <img src="images/cal.png" width="200px" height="150px" alt="image" />
+          </a>
+          </div>
+
+          <p class="em_text"> Language used: Java (SQLlite)</p>
+
+          <p> See code in github! <a href="https://github.com/kongfanzhong/SignCalendar" target="_blank"> link </a></p>
+
+          <p> An android calendar (learned by myself). Click on photo to download apk.</p>
+          
+          <ui>
+          <li> Worked with a group of 5 to build the calendar app. from 0 basis </li>
+          <li> Collaborated with others to finish different parts of the program </li>
+          </ui>
+          <br>
+          <br>
+          <br>
+          <br>
+          <div class="header_01">
+            Mhacare
+          </div>
+
+          <div class="image_wrapper image_wrapper_fr"><img src="images/Mhacare.png" width="300px" alt=
+          "image" /></div>
+
+          <p class="em_text"> Application used: javascript, html, Firebase </p>
+
+          <p> See code in github! <a href="https://github.com/kongfanzhong/Mhacare" target="_blank"> link 
+          </a> </p>
+
+          <p> A website that records the prescriptions of doctor made on patient. Patients can log in to see their prescriptions and matters need attention, while doctor can see the previous of the patient. </p>
+
+          <ui>
+          <li> Worked with a group of 4 to build the website in 3 days (also in nights) </li>
+          <li> Collaborated with others to finish different parts of the program </li>
+          </ui>
+          
+
+          <div class="margin_bottom_40"></div>
+          <div class="header_00"> Some media I made </div>
+          <hr>
           <div class="header_01">
             Micro film: Cycles
           </div>
 
-          <div onclick="MyFunction(&#39;mask2&#39;)" class="image_wrapper image_wrapper_fl"><img src="images/image_05.jpg" alt=
+          <div onclick="showVideo('mask2')" class="image_wrapper image_wrapper_fl"><img src="images/image_05.jpg" alt=
           "image" /></div>
 
           <p class="em_text">Application used: Adobe Premiere</p>
@@ -170,43 +214,28 @@
           </p>
 
           <p>Also, our team spent 4 days in making it and got athe first prize during second competition. 
-          There is no dialogue in film; however, a general understanding of China may help you understand this film. Click on photo to watch it.</p>
+          There is no dialogue in film; however, a general understanding of China may help you understand this film. <b> Click on photo to watch it. </b> </p>
+
 
           <div class="header_01">
-              Micro film: Military Training World
+            Micro film: Military Training World
           </div>
-
-          <div class="image_wrapper image_wrapper_fr" onclick="MyFunction(&#39;mask1&#39;)"><img src="images/image_04.jpg" alt=
+          <div class="image_wrapper image_wrapper_fr" onclick="showVideo('mask1')"><img src="images/image_04.jpg" alt=
           "image" /></div>
 
           <p class="em_text">Application used: Adobe Premiere</p>
 
           <p> This is a comedy about military training. It describes what activities students do during military training in a funny way. 
           A group of 20 students together made this film and got the first prize for this film. Proudly, I'm the director. :)
-          Click on photo to watch it. Warning: it is Chinese dubbing!</p>
+          <b> Click on photo to watch it </b>. Warning: it is Chinese dubbing!</p>
             
           <div class="margin_bottom_40"></div>
 
-          <div class="margin_bottom_40"></div>
-        </div><!-- end of page 1 -->
+        </div>
       </div><!-- end of glidecontent wrapper -->
     </div><!-- end of content -->
   </div><!-- end of container -->
   <!-- background-color: #FAEBD7;  -->
-  <script type="text/javascript">
-    function MyFunction(myMask){
-        $("#" + myMask).css("height",$(document).height());     
-        $("#" + myMask).css("width",$(document).width());    
-        $("#" + myMask).css("",$(document).width() / 2);
-        document.getElementById(myMask).style.display = 'block';
-        $("#" + myMask).show(); 
-    }
-    function Hidden(myMask, myVideo){ 
-        document.getElementById(myVideo).pause();     
-        $("#" + myMask).hide();
-    }
-  </script>
-
   <footer>
     <div id="templatemo_footer">
       Copyright <a href="#">Fanzhong Kong</a>
